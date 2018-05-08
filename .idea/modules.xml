@@ -3,9 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Taxi-Advice.iml" filepath="$PROJECT_DIR$/Taxi-Advice.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../../LENOVO/oscar/taximetrodos/Taxi-Advice.iml" filepath="$PROJECT_DIR$/../../../LENOVO/oscar/taximetrodos/Taxi-Advice.iml" />
+      <module fileurl="file://C:\Users\LENOVO\LENOVO\oscar\taximetrodos\Taxi-Advice.iml" filepath="C:\Users\LENOVO\LENOVO\oscar\taximetrodos\Taxi-Advice.iml" />
+      <module fileurl="file://C:\Users\LENOVO\oscar\taxiadvice\Taxi-Advice\Taxi-Advice.iml" filepath="C:\Users\LENOVO\oscar\taxiadvice\Taxi-Advice\Taxi-Advice.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/taximetrodos.iml" filepath="$PROJECT_DIR$/taximetrodos.iml" />
+      <module fileurl="file://C:\Users\LENOVO\oscar\taxiadvice\Taxi-Advice\app\app.iml" filepath="C:\Users\LENOVO\oscar\taxiadvice\Taxi-Advice\app\app.iml" />
+      <module fileurl="file://C:\Users\LENOVO\oscar\taxiadvice\Taxi-Advice\taximetrodos.iml" filepath="C:\Users\LENOVO\oscar\taxiadvice\Taxi-Advice\taximetrodos.iml" />
     </modules>
   </component>
 </project>

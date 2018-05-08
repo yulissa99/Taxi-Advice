@@ -43,4 +43,12 @@
     <!--layout category_item-->
     <dimen name="category_item_space">10dp</dimen>
     <dimen name="category_item_size_icon">30dp</dimen>
+
+    <dimen name="activity_splash_screen_image">150dp</dimen>
+    <dimen name="activity_splash_screen_margin_top">250dp</dimen>
+
+    <dimen name="activity_sign_up_icon">100dp</dimen>
+
+    <dimen name="activity_suggestion_icon_height">120dp</dimen>
+    <dimen name="activity_suggestion_icon_width">300dp</dimen>
 </resources>

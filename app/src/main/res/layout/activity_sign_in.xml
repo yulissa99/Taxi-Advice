@@ -11,6 +11,13 @@
         android:layout_height="match_parent"
         tools:ignore="ScrollViewSize,UselessParent">
 
+        <ImageView
+            android:layout_width="@dimen/activity_splash_screen_margin_top"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="@dimen/default_padding"
+            android:src="@drawable/taxibeam"/>
+
         <Button
             android:layout_width="@dimen/activity_sing_in_width_button"
             android:layout_height="wrap_content"
@@ -98,6 +105,7 @@
                     <EditText
                         android:id="@+id/email"
                         android:layout_width="match_parent"
+                        android:drawableRight="@drawable/ic_email"
                         android:layout_height="wrap_content"
                         android:hint="@string/activity_sing_in_email"
                         android:inputType="textEmailAddress"
@@ -117,6 +125,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/activity_sing_in_password"
+                        android:drawableRight="@drawable/ic_lock"
                         android:inputType="textPassword"
                         android:textColor="@color/colorPrimaryDark"
                         app:backgroundTint="@color/colorPrimaryDark"

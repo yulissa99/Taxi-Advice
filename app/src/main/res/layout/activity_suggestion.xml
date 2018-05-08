@@ -8,6 +8,12 @@
     android:padding="12dp"
     tools:context="hernandez.perez.uca.com.taximetrodos.activities.SuggestionActivity">
 
+    <ImageView
+        android:layout_width="@dimen/activity_suggestion_icon_width"
+        android:layout_height="@dimen/activity_suggestion_icon_height"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/opinion"/>
+
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -33,6 +39,7 @@
 
     <Button
         android:id="@+id/create"
+        android:layout_marginTop="6dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/suggestion_add_activity_button_create" />

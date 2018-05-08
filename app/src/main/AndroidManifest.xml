@@ -27,21 +27,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".activities.SignInActivity" />
-        <activity
-            android:name=".activities.MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".activities.SplashActivity" android:noHistory="true" android:theme="@style/Theme.Design.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activities.SignInActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
         <activity android:name=".activities.SuggestionActivity" />
         <activity android:name=".activities.SignUpActivity" />
-        <activity android:name=".activities.ResumeActivity"></activity>
+        <activity android:name=".activities.ResumeActivity" />
+
     </application>
 
 </manifest>
