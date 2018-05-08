@@ -3,6 +3,7 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="key_access_token">access_token</string>
 
     <string name="action_settings">Settings</string>
 
@@ -13,4 +14,34 @@
     <string name="suggestion_add_activity_edit_text_description">Descripción</string>
     <string name="suggestion_add_activity_edit_text_title">Titulo</string>
     <string name="nav_bar_name">User Name</string>
+
+    <!--activity_sign_up-->
+    <string name="activity_sign_up_name">Nombre completo</string>
+    <string name="activity_sign_up_username">Nombre de usuario</string>
+    <string name="activity_sign_up_email">Correo electrónico</string>
+    <string name="activity_sign_up_password">Contraseña</string>
+    <string name="activity_sing_up_empty_fields_message">Todos los campos son requeridos.</string>
+    <string name="activity_sign_up_back_button">Regresar</string>
+    <string name="activity_sign_up_sign_up_button">Registrarme</string>
+
+    <!--Error messages of application-->
+
+    <string name="without_permits">Si rechaza el permiso, no puede usar este servicio</string>
+    <string name="error_publishing_complaint">No se publicó la denuncia</string>
+    <string name="error_message">ERROR</string>
+
+    <!--activity_sing_in-->
+    <string name="activity_sing_in_email">Correo electrónico</string>
+    <string name="activity_sing_in_question">¿No tienes cuenta?</string>
+    <string name="activity_sing_in_password">Contraseña</string>
+    <string name="activity_sing_in_sign_up">REGISTRAME</string>
+    <string name="activity_sing_in_button_title">ENTRAR</string>
+    <string name="activity_sing_in_message_empty_email">No ha definido un correo</string>
+    <string name="activity_sing_in_message_empty_password">No ha definido su contraseña</string>
+    <string name="one_hour_ago">Hace 1 hora</string>
+    <string name="activity_sing_in_title">LOGIN</string>
+
+    <!--Message application-->
+    <string name="message_delete_complaint">ELIMINADA</string>
+    <string name="message_without_connection">Error, sin conexión a internet</string>
 </resources>

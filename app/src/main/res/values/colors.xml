@@ -3,4 +3,16 @@
     <color name="colorPrimary">#00AA8D</color>
     <color name="colorPrimaryDark">#008975</color>
     <color name="colorAccent">#000000</color>
+
+    <!--sing_in-->
+    <color name="activity_sing_in_background_color">#77B3D4</color>
+    <color name="activity_sing_in_color_buttonDark">#2E99E1</color>
+    <color name="activity_sing_in_color_buttonLight">#90CAF9</color>
+    <color name="activity_sing_colorPrimaryDark">#618fa9</color>
+    <color name="colorRegister">#6F96E2</color>
+
+    <!--card_view-->
+    <color name="placeHolderImage">#F5F5F5</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorSpinner">#05ab9a</color>
 </resources>

@@ -9,4 +9,38 @@
     <dimen name="card_dimen">2dp</dimen>
     <dimen name="image_icon_size">150dp</dimen>
     <dimen name="card_layout_margin">6dp</dimen>
+    <dimen name="padding_layout">12dp</dimen>
+    <dimen name="elevation_views">4dp</dimen>
+
+    <!--activity_sign_up-->
+    <dimen name="activity_sign_up_space_image">5dp</dimen>
+    <dimen name="activity_sign_up_size_image">120dp</dimen>
+    <dimen name="activity_sign_up_margin_top_card">130dp</dimen>
+    <dimen name="activity_sign_up_margin_top_button">130dp</dimen>
+    <dimen name="activity_sign_up_margin_height_card">370dp</dimen>
+    <dimen name="activity_sign_up_margin_horizontal_editText">30dp</dimen>
+    <dimen name="activity_sign_up_margin_bottom_editText">70dp</dimen>
+    <dimen name="activity_sign_up_button_width">250dp</dimen>
+
+    <!--activity_sing_in-->
+
+    <dimen name="activity_sing_in_space_image">20dp</dimen>
+    <dimen name="activity_sing_space_layout">530dp</dimen>
+    <dimen name="activity_sing_size_button">150dp</dimen>
+    <dimen name="activity_sing_in_size_image">140dp</dimen>
+    <dimen name="activity_sing_in_margin_horizontal_editText">30dp</dimen>
+    <dimen name="activity_sing_in_margin_top">10dp</dimen>
+    <dimen name="activity_sing_in_size_title">20sp</dimen>
+    <dimen name="activity_sing_in_margin_bottom_gif">70dp</dimen>
+    <dimen name="activity_sing_in_margin_top_gif">10dp</dimen>
+    <dimen name="activity_sing_in_margin_bottom_editText">70dp</dimen>
+    <dimen name="activity_sing_in_margin_top_button">180dp</dimen>
+    <dimen name="activity_sing_in_width_button">250dp</dimen>
+    <dimen name="activity_sing_in_margin_card">65dp</dimen>
+    <dimen name="activity_sing_in_corner">10dp</dimen>
+    <dimen name="activity_sign_in_progress_bar_height">30dp</dimen>
+
+    <!--layout category_item-->
+    <dimen name="category_item_space">10dp</dimen>
+    <dimen name="category_item_size_icon">30dp</dimen>
 </resources>
