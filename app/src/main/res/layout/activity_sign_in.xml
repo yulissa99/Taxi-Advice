@@ -21,16 +21,6 @@
             android:paddingBottom="@dimen/activity_sing_in_space_image"
             android:paddingTop="@dimen/activity_sing_in_space_image">
 
-            <pl.droidsonroids.gif.GifTextView
-
-                android:id="@+id/gif"
-                android:layout_width="@dimen/activity_sing_in_size_image"
-                android:layout_height="@dimen/activity_sing_in_size_image"
-                android:layout_marginBottom="@dimen/activity_sing_in_margin_bottom_gif"
-                android:layout_marginTop="@dimen/activity_sing_in_margin_top"
-                android:background="@drawable/ic_drop"
-                tools:ignore="ContentDescription" />
-
         </LinearLayout>
 
         <Button
@@ -121,7 +111,6 @@
 
                     <ProgressBar
                         android:id="@+id/signInProgressBar"
-                        style="?android:attr/progressBarStyle"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/activity_sign_in_progress_bar_height"
                         android:layout_gravity="center"
@@ -171,7 +160,6 @@
                 android:layout_width="@dimen/activity_sing_size_button"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/card_view"
-                android:background="@android:color/transparent"
                 android:text="@string/activity_sing_in_sign_up"
                 android:textColor="@color/colorRegister"
                 tools:ignore="ObsoleteLayoutParam" />

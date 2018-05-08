@@ -42,7 +42,6 @@
         </activity>
         <activity android:name=".activities.SuggestionActivity" />
         <activity android:name=".activities.SignUpActivity" />
-
     </application>
 
 </manifest>
