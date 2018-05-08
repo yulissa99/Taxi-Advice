@@ -7,9 +7,7 @@ import android.arch.persistence.room.ColumnInfo;
  */
 
 public class ComentarioCreate {
-    @ColumnInfo(name = "titulo")
     private String titulo;
-    @ColumnInfo (name = "descripcion")
     private String descripcion;
 
     public String getTitulo() {

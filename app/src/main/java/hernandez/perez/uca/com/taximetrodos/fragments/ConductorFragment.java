@@ -31,7 +31,7 @@ public class ConductorFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_conductor, container, false);
 
         db = Room.databaseBuilder(this.getContext(),
-                AppDatabase.class, "chanchito").allowMainThreadQueries()
+                AppDatabase.class, "database").allowMainThreadQueries()
                 .build();
 
         init(view);
@@ -71,7 +71,7 @@ public class ConductorFragment extends Fragment {
 
     public List<Conductor> cargarDB(){
         List<Conductor> conductores = db.conductorDao().getAll();
-
+        Log.i("LOAD DB",conductores.size()+"");
         return conductores;
     }
 
@@ -91,7 +91,7 @@ public class ConductorFragment extends Fragment {
 
     public void guardarDB(List<Conductor> conductores){
         for (int i=0;i<conductores.size();i++){
-            if(!validarExistencia(conductores.get(i))){
+            if(validarExistencia(conductores.get(i))){
                 db.conductorDao().insertAll(conductores.get(i));
             }
         }

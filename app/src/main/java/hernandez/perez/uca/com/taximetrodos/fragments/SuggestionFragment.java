@@ -33,7 +33,7 @@ public class SuggestionFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_suggestion, container, false);
 
         db = Room.databaseBuilder(this.getContext(),
-                AppDatabase.class, "appDB").allowMainThreadQueries()
+                AppDatabase.class, "database").allowMainThreadQueries()
                 .build();
 
         init(view);
@@ -73,7 +73,7 @@ public class SuggestionFragment extends Fragment {
 
     public List<Comentario> cargarDB(){
         List<Comentario> comentarios = db.comentarioDao().getAll();
-
+        Log.i("LOAD DB",comentarios.size()+"");
         return comentarios;
     }
 
@@ -93,7 +93,7 @@ public class SuggestionFragment extends Fragment {
 
     public void guardarDB(List<Comentario> comentarios){
         for (int i=0;i<comentarios.size();i++){
-            if(!validarExistencia(comentarios.get(i))){
+            if(validarExistencia(comentarios.get(i))){
                 db.comentarioDao().insertAll(comentarios.get(i));
             }
         }
