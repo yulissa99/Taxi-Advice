@@ -33,7 +33,7 @@ public class SuggestionFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_suggestion, container, false);
 
         db = Room.databaseBuilder(this.getContext(),
-                AppDatabase.class, "chanchito").allowMainThreadQueries()
+                AppDatabase.class, "appDB").allowMainThreadQueries()
                 .build();
 
         init(view);
@@ -42,7 +42,7 @@ public class SuggestionFragment extends Fragment {
 
 
     private void init(View view) {
-        recyclerView = view.findViewById(R.id.recycler_view);
+        recyclerView = view.findViewById(R.id.recycler_view_sugg);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 

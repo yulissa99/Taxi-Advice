@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        refreshFragments(ConductorFragment.class);
         AppDatabase db = Room.databaseBuilder(getApplicationContext(), AppDatabase.class,
                 "database-name")
                 .allowMainThreadQueries()
@@ -115,24 +115,9 @@ public class MainActivity extends AppCompatActivity
 
                 break;
             default:
-                fragmentClass = MainActivity.class;
+                fragmentClass = ConductorFragment.class;
         }
-
-        try {
-            if(fragmentClass!=null)
-            {
-                fragment = (Fragment) fragmentClass.newInstance();
-                // Insert the fragment by replacing any existing fragment
-                FragmentManager fragmentManager = getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.flContent, fragment).commit();
-            }
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
+        refreshFragments(fragmentClass);
         return true;
     }
 
@@ -140,15 +125,16 @@ public class MainActivity extends AppCompatActivity
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         categoriesDialog.dismiss();
-        refreshComplaints();
+        refreshFragments(ConductorFragment.class);
     }
 
-    private void refreshComplaints(){
+    private void refreshFragments(Class fragmentClass){
+
         Fragment fragment;
-        Class fragmentClass;
-        fragmentClass = FragmentActivity.class;
         try {
+
             fragment = (Fragment) fragmentClass.newInstance();
+            // Insert the fragment by replacing any existing fragment
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.flContent, fragment).commit();
         } catch (Exception e) {

@@ -12,7 +12,6 @@
         android:layout_gravity="center"
         android:clickable="true"
         android:focusable="true"
-        android:foreground="?attr/selectableItemBackgroundBorderless"
         app:cardCornerRadius="@dimen/card_dimen"
         app:cardElevation="@dimen/card_dimen"
         app:cardMaxElevation="@dimen/card_dimen"

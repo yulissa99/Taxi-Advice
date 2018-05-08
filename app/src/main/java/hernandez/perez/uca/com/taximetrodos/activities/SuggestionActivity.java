@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import hernandez.perez.uca.com.taximetrodos.R;
@@ -34,9 +35,9 @@ public class SuggestionActivity extends AppCompatActivity {
      */
 
     private void initViews() {
-        titulo = (EditText) findViewById(R.id.titulo);
-        descr = (EditText) findViewById(R.id.descr);
-        create = (Button) findViewById(R.id.create);
+        titulo = findViewById(R.id.titulo);
+        descr = findViewById(R.id.description);
+        create = findViewById(R.id.create);
 
         create.setOnClickListener(new View.OnClickListener() {
             @Override
