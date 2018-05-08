@@ -44,4 +44,14 @@
     <!--Message application-->
     <string name="message_delete_complaint">ELIMINADA</string>
     <string name="message_without_connection">Error, sin conexión a internet</string>
+
+    <!--Resume Activity-->
+    <string name="activity_resume_name">Nombre</string>
+    <string name="activity_resume_last_name">Apellido</string>
+    <string name="activity_resume_state">Estado</string>
+    <string name="activity_resume_work_experience">Experiencia Laboral</string>
+    <string name="activity_resume_cause">Causa</string>
+    <string name="activity_resume_phone">Teléfono</string>
+    <string name="activity_resume_mail">Correo</string>
+    <string name="activity_resume_civil_status">Estado civil</string>
 </resources>

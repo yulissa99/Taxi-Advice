@@ -100,6 +100,9 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_suggestions:
                 fragmentClass = SuggestionActivity.class;
                 break;
+            case R.id.nav_resume:
+                fragmentClass = ResumeActivity.class;
+                break;
             case R.id.nav_log_out:
                 Remember.clear();
                 backToSignInActivity();

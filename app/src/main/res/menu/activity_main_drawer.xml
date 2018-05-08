@@ -12,6 +12,10 @@
             android:id="@+id/nav_suggestions"
             android:icon="@drawable/ic_rate_review_black_24dp"
             android:title="Sugerencias" />
+        <item
+            android:id="@+id/nav_resume"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Curriculum"/>
     </group>
 
     <item android:title="Log Out">
