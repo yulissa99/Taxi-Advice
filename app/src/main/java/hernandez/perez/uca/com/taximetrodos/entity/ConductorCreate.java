@@ -1,17 +1,31 @@
 package hernandez.perez.uca.com.taximetrodos.entity;
 
+import android.arch.persistence.room.ColumnInfo;
+
+import com.google.gson.annotations.SerializedName;
+
 /**
  * Created by LENOVO on 8/5/2018.
  */
 
 public class ConductorCreate {
+    @ColumnInfo(name = "nombre")
     private String nombre;
-    private String apellidos;
+    @ColumnInfo (name = "estado")
     private String estado;
+    @ColumnInfo (name = "apellidos")
+    private String apellidos;
+    @SerializedName("experien_lab")
+    @ColumnInfo (name = "experien_lab")
     private String experienLab;
+    @ColumnInfo (name = "causa")
     private String causa;
+    @ColumnInfo (name = "telefono")
     private String telefono;
+    @ColumnInfo (name = "correo")
     private String correo;
+    @SerializedName("estado_civil")
+    @ColumnInfo (name = "estado_civil")
     private String estadoCivil;
 
     public String getNombre() {

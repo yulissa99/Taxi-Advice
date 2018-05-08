@@ -12,13 +12,13 @@ import com.google.gson.annotations.SerializedName;
 
 @Entity
 public class Conductor {
-
     @ColumnInfo (name = "nombre")
     private String nombre;
     @ColumnInfo (name = "estado")
     private String estado;
     @ColumnInfo (name = "apellidos")
     private String apellidos;
+    @SerializedName("experien_lab")
     @ColumnInfo (name = "experien_lab")
     private String experienLab;
     @ColumnInfo (name = "causa")
@@ -27,6 +27,7 @@ public class Conductor {
     private String telefono;
     @ColumnInfo (name = "correo")
     private String correo;
+    @SerializedName("estado_civil")
     @ColumnInfo (name = "estado_civil")
     private String estadoCivil;
     @PrimaryKey (autoGenerate = true)

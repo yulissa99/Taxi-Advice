@@ -91,8 +91,8 @@ public class ResumeActivity extends AppCompatActivity {
                 @Override
                 public void onResponse(Call<Conductor> call, Response<Conductor> response) {
                     if (response.body() != null) {
-                        Log.i("alo",response.body().getNombre());
-                        Log.i("alo", String.valueOf(response.body().getId()));
+                        Log.i("HPTA RESPONDE",response.body().getNombre());
+                        Log.i("HPTA RESPONDE", String.valueOf(response.body().getId()));
                     }
                 }
 

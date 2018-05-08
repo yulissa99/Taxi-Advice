@@ -26,6 +26,7 @@ import com.tumblr.remember.Remember;
 import hernandez.perez.uca.com.taximetrodos.R;
 import hernandez.perez.uca.com.taximetrodos.db.AppDatabase;
 import hernandez.perez.uca.com.taximetrodos.fragments.ConductorFragment;
+import hernandez.perez.uca.com.taximetrodos.fragments.SuggestionFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -96,6 +97,9 @@ public class MainActivity extends AppCompatActivity
         switch(item.getItemId()) {
             case R.id.nav_drivers:
                 fragmentClass = ConductorFragment.class;
+                break;
+            case R.id.nav_show_suggestions:
+                fragmentClass = SuggestionFragment.class;
                 break;
             case R.id.nav_suggestions:
                 Intent intent = new Intent(getApplicationContext(), SuggestionActivity.class);
