@@ -12,8 +12,8 @@ import hernandez.perez.uca.com.taximetrodos.entity.Lugar;
  * Created by LENOVO on 12/4/2018.
  */
 
-@Database(entities = {Lugar.class, Conductor.class}, version = 3)
+@Database(entities = {Lugar.class, Conductor.class}, version = 4)
 public abstract class AppDatabase extends RoomDatabase {
-    public abstract LugarDao lugarDao();
+    //public abstract LugarDao lugarDao();
     public abstract ConductorDao conductorDao();
 }

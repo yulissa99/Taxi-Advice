@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
     tools:context="hernandez.perez.uca.com.taximetrodos.activities.ResumeActivity">
 
     <LinearLayout
@@ -16,7 +18,7 @@
             android:layout_height="match_parent">
 
             <EditText
-                android:id="@+id/name"
+                android:id="@+id/nombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/activity_resume_name" />
@@ -28,7 +30,7 @@
             android:layout_height="match_parent">
 
             <EditText
-                android:id="@+id/last_name"
+                android:id="@+id/apellidos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/activity_resume_last_name" />
@@ -39,7 +41,7 @@
             android:layout_height="match_parent">
 
             <EditText
-                android:id="@+id/cause"
+                android:id="@+id/causa"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/activity_resume_cause" />
@@ -50,7 +52,7 @@
             android:layout_height="match_parent">
 
             <EditText
-                android:id="@+id/state"
+                android:id="@+id/estado"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/activity_resume_state" />
@@ -61,7 +63,7 @@
             android:layout_height="match_parent">
 
             <EditText
-                android:id="@+id/work_exp"
+                android:id="@+id/experien_lab"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/activity_resume_work_experience" />
@@ -72,7 +74,7 @@
             android:layout_height="match_parent">
 
             <EditText
-                android:id="@+id/phone"
+                android:id="@+id/telefono"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/activity_resume_phone" />
@@ -83,7 +85,7 @@
             android:layout_height="match_parent">
 
             <EditText
-                android:id="@+id/mail"
+                android:id="@+id/correo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/activity_resume_mail" />
@@ -94,7 +96,7 @@
             android:layout_height="match_parent">
 
             <EditText
-                android:id="@+id/civil_status"
+                android:id="@+id/estado_civil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/activity_resume_civil_status" />

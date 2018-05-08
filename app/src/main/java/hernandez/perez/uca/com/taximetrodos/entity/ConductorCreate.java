@@ -1,47 +1,18 @@
 package hernandez.perez.uca.com.taximetrodos.entity;
 
-import android.arch.persistence.room.ColumnInfo;
-import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.PrimaryKey;
-
-import com.google.gson.annotations.SerializedName;
-
 /**
- * Created by LENOVO on 12/4/2018.
+ * Created by LENOVO on 8/5/2018.
  */
 
-@Entity
-public class Conductor {
-
-    @ColumnInfo (name = "nombre")
+public class ConductorCreate {
     private String nombre;
-    @ColumnInfo (name = "estado")
-    private String estado;
-    @ColumnInfo (name = "apellidos")
     private String apellidos;
-    @ColumnInfo (name = "experien_lab")
+    private String estado;
     private String experienLab;
-    @ColumnInfo (name = "causa")
     private String causa;
-    @ColumnInfo (name = "telefono")
     private String telefono;
-    @ColumnInfo (name = "correo")
     private String correo;
-    @ColumnInfo (name = "estado_civil")
     private String estadoCivil;
-    @PrimaryKey (autoGenerate = true)
-    private int id;
-    @SerializedName("id_carro")
-    @ColumnInfo (name = "id_carro")
-    private int idCarro;
-
-    public int getIdCarro() {
-        return idCarro;
-    }
-
-    public void setIdCarro(int idCarro) {
-        this.idCarro = idCarro;
-    }
 
     public String getNombre() {
         return nombre;
@@ -51,28 +22,20 @@ public class Conductor {
         this.nombre = nombre;
     }
 
-    public String getEstado() {
-        return estado;
-    }
-
-    public void setEstado(String estado) {
-        this.estado = estado;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getApellidos() {
         return apellidos;
     }
 
     public void setApellidos(String apellidos) {
         this.apellidos = apellidos;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 
     public String getExperienLab() {

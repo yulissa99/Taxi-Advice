@@ -48,7 +48,7 @@ public class ConductorFragment extends Fragment {
         call.enqueue(new Callback<List<Conductor>>() {
             @Override
             public void onResponse(Call<List<Conductor>> call, Response<List<Conductor>> response) {
-                if (response.body() != null) {
+                if (response.body() != null && !response.body().isEmpty()) {
 
                     Log.i("MESSAGE: ",response.body().get(0).getNombre());
                     ConductorAdapter conductorAdapter = new ConductorAdapter(response.body());
@@ -81,7 +81,7 @@ public class ConductorFragment extends Fragment {
 
         List<Conductor> conductores = cargarDB();
         for(int i = 0; i < conductores.size(); i++){
-            if(conductor.equals(conductores.get(i))){
+            if(conductor.getId()== conductores.get(i).getId()){
                 encontrado = false;
                 break;
             }

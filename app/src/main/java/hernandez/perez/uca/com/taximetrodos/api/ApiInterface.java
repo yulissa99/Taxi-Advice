@@ -4,6 +4,7 @@ import java.util.List;
 
 import hernandez.perez.uca.com.taximetrodos.entity.AccessToken;
 import hernandez.perez.uca.com.taximetrodos.entity.Conductor;
+import hernandez.perez.uca.com.taximetrodos.entity.ConductorCreate;
 import hernandez.perez.uca.com.taximetrodos.entity.Lugar;
 import hernandez.perez.uca.com.taximetrodos.entity.User;
 import hernandez.perez.uca.com.taximetrodos.entity.UserCreate;
@@ -19,7 +20,7 @@ public interface ApiInterface {
     Call<List<Conductor>> getConductores();
 
     @POST("conductores")
-    Call<Conductor> postBus(@Path("id") Conductor conductor);
+    Call<Conductor> postConductor(@Body ConductorCreate conductor);
 
     @POST("Users")
     Call<User> signUp(@Body UserCreate user);

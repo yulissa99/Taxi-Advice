@@ -98,10 +98,12 @@ public class MainActivity extends AppCompatActivity
                 fragmentClass = ConductorFragment.class;
                 break;
             case R.id.nav_suggestions:
-                fragmentClass = SuggestionActivity.class;
+                Intent intent = new Intent(getApplicationContext(), SuggestionActivity.class);
+                startActivity(intent);
                 break;
             case R.id.nav_resume:
-                fragmentClass = ResumeActivity.class;
+                Intent intentr = new Intent(getApplicationContext(), ResumeActivity.class);
+                startActivity(intentr);
                 break;
             case R.id.nav_log_out:
                 Remember.clear();
