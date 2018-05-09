@@ -117,8 +117,6 @@
                 android:layout_marginBottom="@dimen/padding_layout"
                 android:layout_marginTop="190dp"
                 android:text="@string/activity_sign_up_sign_up_button"
-                android:textColor="@color/colorWhite"
-                android:background="@color/colorPrimaryDark"
                 tools:ignore="ButtonStyle" />
 
 
